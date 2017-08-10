@@ -1,0 +1,98 @@
+header,html,body,div,p,nav,ul,li,a,h1,h2,span{
+	margin: 0;
+	
+}
+.wrapper {
+  max-width: 990px;
+  margin: 0 auto;
+  height: inherit;
+  overflow: hidden;
+}
+
+header{
+	background: black;
+	margin: 0;
+    float: none;
+    text-align: center;
+}
+
+header img{
+	float: left;
+  	margin-top: 6px;
+  	max-width: 130px;
+  	margin-left: 20px;
+
+}
+
+
+header li{	
+	height: 40px;
+	overflow: hidden;
+	border-radius: 19px;
+	margin: 5px
+}
+
+header ul{
+	margin: 0;
+	padding-top: 10px;
+	padding-bottom: 7px;
+	font-size: 18px;
+	color: red;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	
+}
+
+li a,
+li a:before{
+	display: block;
+	background:#FFA60A;
+	color: black;
+	line-height: 40px;
+	text-decoration: none;
+	padding: 0 26px;
+	position: relative;
+	font-size: 18px;
+
+
+}
+
+ li a:before{
+	content: attr(data-clone);
+	position: absolute;
+	background: #eee	;
+	top: 100%;
+	left: 0;
+	color: black;
+} 
+
+ul a:hover{
+	margin-top: -40px;
+	transition: all 0.8s;
+}
+
+@media screen and (max-width: 550px) {
+  	 
+  	 header ul{
+  	 	display:inline-flex;
+		flex-wrap: wrap;
+		justify-content: center;
+  	 }
+
+header img{
+	margin-left: 40px;
+    float: none;
+    
+
+}
+	li a,
+	li a:before{
+		padding: 0 100px
+}
+  }
+
+.content1{
+	background:#eee;
+	min-height: 794px;
+}
